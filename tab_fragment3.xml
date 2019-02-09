@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#eeeeee">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_background1">
+        <TextView
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:id="@+id/Frag3_reservation"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:text="예약한 식당 이름"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="주       소"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/Frag3_address"
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="Frag3_address"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="전화번호"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/Frag3_tell"
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="Frag3_tell"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="영업시간"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/Frag3_time"
+                android:layout_width="270dp"
+                android:layout_height="match_parent"
+                android:textSize="15dp"
+                android:text="Frag3_time"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_background2">
+
+        <TextView
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="나의 대기 번호"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/Frag3_mywait"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp"
+            android:textColor="#000000"
+            android:textSize="50dp"
+            android:text="Frag3_mywait"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="현재 대기 팀수 "
+                android:textSize="15dp"
+                android:textColor="#FF3300"/>
+            <TextView
+                android:id="@+id/Frag3_wait"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Frag3_wait"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Frag3_resev_cancel"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_button"
+            android:text="예약 취소" />
+
+    </LinearLayout>
+</LinearLayout>

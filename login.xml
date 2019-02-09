@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:textColor="#ff6600"
+        android:textSize="13dp"
+        android:text="*관리자용 로그인* 휴대폰번호:010 Password:1234"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/etphone"
+        android:hint="휴대폰번호" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:ems="10"
+        android:id="@+id/etPassword_re"
+        android:layout_marginTop="33dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="26dp">
+
+        <Button
+            android:id="@+id/btnRegist"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:text="회원가입하기" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:onClick="loginbutton"
+            android:text="로그인" />
+    </LinearLayout>
+
+</LinearLayout>

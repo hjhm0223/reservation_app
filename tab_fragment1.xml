@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:text="식당 이름으로 검색하기"/>
+
+    <LinearLayout
+        android:id="@+id/search_shop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/Frag1_search"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="식당 이름" />
+
+        <Button
+            android:id="@+id/Frag1_searchbtn"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="검   색" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:text="시, 군/구로 검색하기" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner1"
+            android:layout_weight="1" />
+        <Spinner
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner2"
+            android:layout_weight="1" />
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="검   색"
+            android:id="@+id/button"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/searchlist"
+        android:layout_weight="1"/>
+
+</LinearLayout>
